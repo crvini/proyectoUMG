@@ -24,7 +24,7 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::position.position",
-      "inversedBy": "company_id"
+      "mappedBy": "company_id"
     }
   }
 }
