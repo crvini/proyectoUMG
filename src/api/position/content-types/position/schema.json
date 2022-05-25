@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "positions",
+  "info": {
+    "singularName": "position",
+    "pluralName": "positions",
+    "displayName": "Position",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "company_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::company.company",
+      "inversedBy": "position"
+    },
+    "description": {
+      "type": "text"
+    },
+    "type": {
+      "type": "string"
+    },
+    "location": {
+      "type": "text"
+    },
+    "departament": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "experience": {
+      "type": "string"
+    },
+    "education": {
+      "type": "string"
+    },
+    "custum_attributes": {
+      "type": "string"
+    }
+  }
+}

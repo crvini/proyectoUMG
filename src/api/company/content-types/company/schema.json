@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "companies",
+  "info": {
+    "singularName": "company",
+    "pluralName": "companies",
+    "displayName": "Company"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "id_company": {
+      "type": "uid"
+    },
+    "name_company": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "position": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::position.position",
+      "inversedBy": "company_id"
+    }
+  }
+}
