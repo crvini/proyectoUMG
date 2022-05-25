@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "candidates",
+  "info": {
+    "singularName": "candidate",
+    "pluralName": "candidates",
+    "displayName": "candidates"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "candidate_id": {
+      "type": "uid"
+    },
+    "company_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::company.company"
+    },
+    "position": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::position.position"
+    },
+    "name": {
+      "type": "string"
+    },
+    "email_address": {
+      "type": "email"
+    },
+    "phone_number": {
+      "type": "integer"
+    },
+    "address": {
+      "type": "text"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "json"
+    },
+    "origin": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "work_history": {
+      "type": "json"
+    },
+    "education": {
+      "type": "json"
+    }
+  }
+}
