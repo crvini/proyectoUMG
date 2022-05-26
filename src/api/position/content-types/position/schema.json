@@ -42,8 +42,20 @@
     "education": {
       "type": "string"
     },
-    "custum_attributes": {
+    "custom_attributes": {
+      "type": "json"
+    },
+    "pipeline_id": {
       "type": "string"
+    },
+    "scorecard_id": {
+      "type": "string"
+    },
+    "questtionair_id": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "json"
     }
   }
 }
